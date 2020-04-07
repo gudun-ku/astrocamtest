@@ -47,7 +47,6 @@ class UploadService extends Service
         }
         echo 'uploaded !' . $file;
       } else {
-
         throw new ServiceException(HttpStatus::BAD_GATEWAY, $file['type']);
       }
     } else {
